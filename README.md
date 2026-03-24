@@ -6,7 +6,7 @@ A portfolio-ready sports analytics project that uses real New York Knicks data t
 
 This project combines Python data engineering, sports analytics, and frontend dashboard development in one end-to-end workflow. It pulls real Knicks data with `nba_api`, transforms it into beginner-friendly funnel metrics, and presents the results in a polished GitHub Pages dashboard built with HTML, CSS, JavaScript, Chart.js, and Papa Parse.
 
-The live dashboard is the static site in `docs/`. Tableau files are legacy exports only and are not used for deployment.
+The live dashboard is the static site in `docs/`.
 
 ## Why this project stands out
 
@@ -191,4 +191,3 @@ python, pandas, nba-api, sports-analytics, data-analysis, data-visualization, ch
 
 - The dashboard uses processed CSVs, so the frontend stays simple and easy to explain in interviews.
 - The funnel is intentionally beginner-friendly: it is designed to tell a business story, not claim perfect fan behavior measurement.
-- The `tableau/` folder is optional reference material and is not part of the live site.
