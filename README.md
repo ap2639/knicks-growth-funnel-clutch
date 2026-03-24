@@ -1,10 +1,10 @@
 # knicks-growth-funnel-clutch
 
-A portfolio-ready sports analytics project that uses real New York Knicks data to connect clutch performance to fan growth funnel metrics across four NBA seasons.
+Sports analytics project that uses real New York Knicks data to connect clutch performance to fan growth funnel metrics across four NBA seasons, 2021-2022 season thru 2024-2025 season.
 
 ## GitHub-ready summary
 
-This project combines Python data engineering, sports analytics, and frontend dashboard development in one end-to-end workflow. It pulls real Knicks data with `nba_api`, transforms it into beginner-friendly funnel metrics, and presents the results in a polished GitHub Pages dashboard built with HTML, CSS, JavaScript, Chart.js, and Papa Parse.
+This project combines Python data engineering, sports analytics, and frontend dashboard development in one end-to-end workflow. It pulls real Knicks data with `nba_api`, transforms it  funnel metrics, and presents the results in a polished GitHub Pages dashboard built with HTML, CSS, JavaScript, Chart.js, and Papa Parse.
 
 The live dashboard is the static site in `docs/`.
 
