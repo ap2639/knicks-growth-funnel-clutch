@@ -64,7 +64,7 @@ knicks-growth-funnel-clutch/
 - `Engagement`: Repeated activation within a rolling 7-day window.
 - `Retention`: Activated momentum that continues into the next week.
 
-These are not official marketing system events. They are analytics-friendly proxy metrics built from the game data you pulled.
+These are not official marketing system events. They are analytics-friendly proxy metrics built from the game data pulled.
 
 ## Setup
 
