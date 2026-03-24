@@ -1,0 +1,101 @@
+SEASON,ISO_YEAR,ISO_WEEK,WeekActivation,RETENTION_EVENT,RetentionLabel,ActivationLabel
+2021-22,2021,42,1,0,Not Retained,Activated Week
+2021-22,2021,43,1,1,Retained,Activated Week
+2021-22,2021,44,0,0,Not Retained,No Activation
+2021-22,2021,45,0,0,Not Retained,No Activation
+2021-22,2021,46,0,0,Not Retained,No Activation
+2021-22,2021,47,0,0,Not Retained,No Activation
+2021-22,2021,48,1,0,Not Retained,Activated Week
+2021-22,2021,49,0,0,Not Retained,No Activation
+2021-22,2021,50,0,0,Not Retained,No Activation
+2021-22,2021,51,0,0,Not Retained,No Activation
+2021-22,2021,52,0,0,Not Retained,No Activation
+2021-22,2022,1,1,0,Not Retained,Activated Week
+2021-22,2022,2,0,0,Not Retained,No Activation
+2021-22,2022,3,0,0,Not Retained,No Activation
+2021-22,2022,4,0,0,Not Retained,No Activation
+2021-22,2022,5,0,0,Not Retained,No Activation
+2021-22,2022,6,1,0,Not Retained,Activated Week
+2021-22,2022,7,1,1,Retained,Activated Week
+2021-22,2022,8,0,0,Not Retained,No Activation
+2021-22,2022,9,0,0,Not Retained,No Activation
+2021-22,2022,10,1,0,Not Retained,Activated Week
+2021-22,2022,11,1,1,Retained,Activated Week
+2021-22,2022,12,1,1,Retained,Activated Week
+2021-22,2022,13,1,1,Retained,Activated Week
+2021-22,2022,14,0,0,Not Retained,No Activation
+2022-23,2022,42,0,0,Not Retained,No Activation
+2022-23,2022,43,1,0,Not Retained,Activated Week
+2022-23,2022,44,1,1,Retained,Activated Week
+2022-23,2022,45,0,0,Not Retained,No Activation
+2022-23,2022,46,1,0,Not Retained,Activated Week
+2022-23,2022,47,1,1,Retained,Activated Week
+2022-23,2022,48,0,0,Not Retained,No Activation
+2022-23,2022,49,0,0,Not Retained,No Activation
+2022-23,2022,50,1,0,Not Retained,Activated Week
+2022-23,2022,51,0,0,Not Retained,No Activation
+2022-23,2022,52,1,0,Not Retained,Activated Week
+2022-23,2023,1,1,1,Retained,Activated Week
+2022-23,2023,2,1,1,Retained,Activated Week
+2022-23,2023,3,1,1,Retained,Activated Week
+2022-23,2023,4,1,1,Retained,Activated Week
+2022-23,2023,5,1,1,Retained,Activated Week
+2022-23,2023,6,1,1,Retained,Activated Week
+2022-23,2023,7,0,0,Not Retained,No Activation
+2022-23,2023,8,0,0,Not Retained,No Activation
+2022-23,2023,9,1,0,Not Retained,Activated Week
+2022-23,2023,10,1,1,Retained,Activated Week
+2022-23,2023,11,0,0,Not Retained,No Activation
+2022-23,2023,12,0,0,Not Retained,No Activation
+2022-23,2023,13,0,0,Not Retained,No Activation
+2022-23,2023,14,1,0,Not Retained,Activated Week
+2023-24,2023,43,1,1,Retained,Activated Week
+2023-24,2023,44,0,0,Not Retained,No Activation
+2023-24,2023,45,0,0,Not Retained,No Activation
+2023-24,2023,46,1,0,Not Retained,Activated Week
+2023-24,2023,47,1,1,Retained,Activated Week
+2023-24,2023,48,0,0,Not Retained,No Activation
+2023-24,2023,49,0,0,Not Retained,No Activation
+2023-24,2023,50,0,0,Not Retained,No Activation
+2023-24,2023,51,1,0,Not Retained,Activated Week
+2023-24,2023,52,0,0,Not Retained,No Activation
+2023-24,2024,1,0,0,Not Retained,No Activation
+2023-24,2024,2,1,0,Not Retained,Activated Week
+2023-24,2024,3,1,1,Retained,Activated Week
+2023-24,2024,4,1,1,Retained,Activated Week
+2023-24,2024,5,1,1,Retained,Activated Week
+2023-24,2024,6,0,0,Not Retained,No Activation
+2023-24,2024,7,0,0,Not Retained,No Activation
+2023-24,2024,8,0,0,Not Retained,No Activation
+2023-24,2024,9,1,0,Not Retained,Activated Week
+2023-24,2024,10,0,0,Not Retained,No Activation
+2023-24,2024,11,0,0,Not Retained,No Activation
+2023-24,2024,12,0,0,Not Retained,No Activation
+2023-24,2024,13,1,0,Not Retained,Activated Week
+2023-24,2024,14,0,0,Not Retained,No Activation
+2023-24,2024,15,1,0,Not Retained,Activated Week
+2024-25,2024,43,0,0,Not Retained,No Activation
+2024-25,2024,44,0,0,Not Retained,No Activation
+2024-25,2024,45,0,0,Not Retained,No Activation
+2024-25,2024,46,1,0,Not Retained,Activated Week
+2024-25,2024,47,0,0,Not Retained,No Activation
+2024-25,2024,48,1,0,Not Retained,Activated Week
+2024-25,2024,49,0,0,Not Retained,No Activation
+2024-25,2024,50,1,0,Not Retained,Activated Week
+2024-25,2024,51,0,0,Not Retained,No Activation
+2024-25,2024,52,1,0,Not Retained,Activated Week
+2024-25,2025,1,0,0,Not Retained,No Activation
+2024-25,2025,2,0,0,Not Retained,No Activation
+2024-25,2025,3,0,0,Not Retained,No Activation
+2024-25,2025,4,1,0,Not Retained,Activated Week
+2024-25,2025,5,0,0,Not Retained,No Activation
+2024-25,2025,6,0,0,Not Retained,No Activation
+2024-25,2025,7,1,0,Not Retained,Activated Week
+2024-25,2025,8,1,1,Retained,Activated Week
+2024-25,2025,9,1,1,Retained,Activated Week
+2024-25,2025,10,1,1,Retained,Activated Week
+2024-25,2025,11,1,1,Retained,Activated Week
+2024-25,2025,12,0,0,Not Retained,No Activation
+2024-25,2025,13,0,0,Not Retained,No Activation
+2024-25,2025,14,0,0,Not Retained,No Activation
+2024-25,2025,15,1,0,Not Retained,Activated Week

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Knicks Growth Funnel Clutch</title>
+  <meta
+    name="description"
+    content="A Knicks-themed sports analytics dashboard that connects clutch moments to fan growth funnel metrics across four NBA seasons."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-glow hero-glow-left"></div>
+      <div class="hero-glow hero-glow-right"></div>
+
+      <div class="scoreboard">
+        <div class="scoreboard-card">
+          <span class="scoreboard-label">Home</span>
+          <strong>Knicks</strong>
+          <span class="scoreboard-copy">Clutch-driven fan growth model</span>
+        </div>
+        <div class="scoreboard-card scoreboard-center">
+          <span class="scoreboard-label">Pulse</span>
+          <strong id="scoreboardPulse">00</strong>
+          <span class="scoreboard-copy">Peak activation score</span>
+        </div>
+        <div class="scoreboard-card">
+          <span class="scoreboard-label">Focus</span>
+          <strong>Funnel</strong>
+          <span class="scoreboard-copy">Awareness to retention</span>
+        </div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy-block">
+          <div class="brand-row">
+            <div class="brand-badge">
+              <div class="brand-badge-fallback">
+                NYK
+                <small>NEW YORK</small>
+              </div>
+            </div>
+            <div>
+              <div class="eyebrow">Knicks Growth Funnel Clutch</div>
+              <div class="eyebrow-sub">Sports analytics portfolio project built with Python, nba_api, pandas, Chart.js, and Papa Parse.</div>
+            </div>
+          </div>
+
+          <h1>How clutch Knicks moments can turn game drama into repeat fan engagement.</h1>
+          <p class="hero-description">
+            This dashboard explains how New York Knicks performance in close and high-pressure situations can connect to fan growth funnel stages such as awareness, activation, engagement, and retention.
+          </p>
+
+          <div class="hero-summary">
+            <article class="summary-card">
+              <span>Clutch Record</span>
+              <strong id="heroRecord">0-0</strong>
+            </article>
+            <article class="summary-card">
+              <span>Peak Night</span>
+              <strong id="heroPeakGame">Loading</strong>
+            </article>
+            <article class="summary-card">
+              <span>Season Signal</span>
+              <strong id="heroSignal">Loading</strong>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <section class="floating-panel">
+            <div class="filter-header">
+              <h2>Filters</h2>
+              <span id="filterSummary">Loading seasons...</span>
+            </div>
+
+            <div class="filter-grid">
+              <label>
+                Season
+                <select id="seasonFilter"></select>
+              </label>
+              <label>
+                Venue
+                <select id="venueFilter">
+                  <option value="ALL">All Games</option>
+                  <option value="HOME">Home</option>
+                  <option value="AWAY">Away</option>
+                </select>
+              </label>
+              <label>
+                Fan Stage
+                <select id="stageFilter">
+                  <option value="ALL">All Stages</option>
+                  <option value="Aware">Aware</option>
+                  <option value="Activated">Activated</option>
+                  <option value="Engaged">Engaged</option>
+                </select>
+              </label>
+            </div>
+          </section>
+
+          <section class="floating-panel peak-panel">
+            <span class="panel-eyebrow">Signature Clutch Night</span>
+            <h2 id="peakMatchup">Loading...</h2>
+            <p id="peakMeta">Loading top game details...</p>
+          </section>
+        </aside>
+      </div>
+
+      <svg class="skyline-art" viewBox="0 0 1440 240" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="skylineFill" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="rgba(255,255,255,0.22)"></stop>
+            <stop offset="100%" stop-color="rgba(255,255,255,0.02)"></stop>
+          </linearGradient>
+          <linearGradient id="libertyFill" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="rgba(245,132,38,0.74)"></stop>
+            <stop offset="100%" stop-color="rgba(245,132,38,0.16)"></stop>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="174" width="1440" height="66" fill="rgba(9,21,45,0.95)"></rect>
+        <path d="M0 188 L0 157 L30 157 L30 131 L56 131 L56 168 L74 168 L74 121 L104 121 L104 180 L130 180 L130 141 L154 141 L154 182 L180 182 L180 113 L210 113 L210 182 L236 182 L236 151 L256 151 L256 184 L286 184 L286 91 L318 91 L318 184 L344 184 L344 143 L368 143 L368 184 L404 184 L404 123 L432 123 L432 184 L470 184 L470 103 L505 103 L505 184 L530 184 L530 157 L554 157 L554 184 L590 184 L590 137 L612 137 L612 184 L650 184 L650 117 L676 117 L676 184 L720 184 L720 151 L750 151 L750 184 L786 184 L786 113 L820 113 L820 184 L856 184 L856 135 L884 135 L884 184 L920 184 L920 103 L954 103 L954 184 L986 184 L986 146 L1010 146 L1010 184 L1044 184 L1044 123 L1074 123 L1074 184 L1110 184 L1110 101 L1140 101 L1140 184 L1170 184 L1170 139 L1194 139 L1194 184 L1228 184 L1228 117 L1260 117 L1260 184 L1294 184 L1294 145 L1320 145 L1320 184 L1360 184 L1360 129 L1394 129 L1394 184 L1440 184 L1440 240 L0 240 Z" fill="url(#skylineFill)"></path>
+        <path d="M112 182 L130 182 L130 160 L136 156 L138 145 L143 141 L146 127 L150 123 L154 127 L156 139 L163 145 L165 156 L172 161 L172 182 L191 182 L191 190 L112 190 Z" fill="url(#libertyFill)"></path>
+        <path d="M150 121 L146 113 L149 106 L143 100 L151 102 L156 93 L158 103 L166 101 L161 107 L164 115 Z" fill="#ffd480"></path>
+      </svg>
+    </section>
+
+    <section class="content-grid">
+      <article class="kpi-card">
+        <div class="kpi-label">Awareness</div>
+        <div class="kpi-value" id="awarenessValue">0</div>
+        <p>Total games in the selected view.</p>
+      </article>
+
+      <article class="kpi-card">
+        <div class="kpi-label">Activation Rate</div>
+        <div class="kpi-value" id="activationRateValue">0%</div>
+        <p>High-energy games that likely spark stronger fan response.</p>
+      </article>
+
+      <article class="kpi-card">
+        <div class="kpi-label">Engagement Rate</div>
+        <div class="kpi-value" id="engagementRateValue">0%</div>
+        <p>Repeated spikes that suggest fans stay emotionally involved.</p>
+      </article>
+
+      <article class="kpi-card">
+        <div class="kpi-label">Retention Rate</div>
+        <div class="kpi-value" id="retentionRateValue">0%</div>
+        <p>Weekly carryover that hints at repeat attention.</p>
+      </article>
+
+      <article class="panel chart-panel span-8">
+        <div class="panel-header">
+          <div>
+            <h2>Activation Trend</h2>
+            <p>Game-by-game activation score and the activated games that stood out the most.</p>
+          </div>
+        </div>
+        <canvas id="activationTrendChart"></canvas>
+      </article>
+
+      <article class="panel span-4">
+        <div class="panel-header">
+          <div>
+            <h2>Growth Funnel</h2>
+            <p>A simple sports-marketing view from visibility to repeat attention.</p>
+          </div>
+        </div>
+        <canvas id="funnelChart"></canvas>
+      </article>
+
+      <article class="panel span-6">
+        <div class="panel-header">
+          <div>
+            <h2>Top Activation Games</h2>
+            <p>The best single-game candidates for fan growth campaigns and postgame content pushes.</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Matchup</th>
+                <th>Result</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody id="topGamesTable"></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="panel span-6">
+        <div class="panel-header">
+          <div>
+            <h2>Clutch Leaderboard</h2>
+            <p>Top Knicks players in league clutch minutes for the chosen season.</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>PTS</th>
+                <th>+/-</th>
+                <th>FG%</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboardTable"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      Built from real Knicks historical data across the 2021-22 through 2024-25 seasons.
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="./data/dashboard-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
