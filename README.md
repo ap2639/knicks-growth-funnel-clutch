@@ -6,6 +6,8 @@ A portfolio-ready sports analytics project that uses real New York Knicks data t
 
 This project combines Python data engineering, sports analytics, and frontend dashboard development in one end-to-end workflow. It pulls real Knicks data with `nba_api`, transforms it into beginner-friendly funnel metrics, and presents the results in a polished GitHub Pages dashboard built with HTML, CSS, JavaScript, Chart.js, and Papa Parse.
 
+The live dashboard is the static site in `docs/`. Tableau files are legacy exports only and are not used for deployment.
+
 ## Why this project stands out
 
 - End-to-end workflow from API extraction to deployed dashboard
@@ -149,18 +151,21 @@ Then open:
 
 ## Deploy on GitHub Pages
 
-### Option 1: Use the `docs/` folder from the main branch
+This repository includes a GitHub Actions workflow that deploys the static dashboard from `docs/` whenever `main` is updated.
 
-1. Push the repository to GitHub.
-2. Open the repository `Settings`.
-3. Click `Pages`.
-4. Under `Build and deployment`, choose:
-   - `Source`: `Deploy from a branch`
-   - `Branch`: `main`
-   - `Folder`: `/docs`
-5. Save.
+### One-time GitHub setup
 
-GitHub Pages will publish the dashboard using the files in `docs/`.
+1. Open the repository `Settings`.
+2. Click `Pages`.
+3. Under `Build and deployment`, choose:
+   - `Source`: `GitHub Actions`
+4. Save.
+
+After that, every push to `main` will redeploy the dashboard automatically.
+
+Expected Pages URL:
+
+- `https://ap2639.github.io/knicks-growth-funnel-clutch/`
 
 ## Resume-friendly project summary
 
@@ -186,3 +191,4 @@ python, pandas, nba-api, sports-analytics, data-analysis, data-visualization, ch
 
 - The dashboard uses processed CSVs, so the frontend stays simple and easy to explain in interviews.
 - The funnel is intentionally beginner-friendly: it is designed to tell a business story, not claim perfect fan behavior measurement.
+- The `tableau/` folder is optional reference material and is not part of the live site.
